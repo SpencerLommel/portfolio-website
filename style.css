@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content {
+    display: flex;
+    flex: 1;
+}
+
+.column {
+    flex: 1;
+    overflow: auto;
+}
+
+#lcolumn {
+    background-color: #06283d;
+    color: #F7F7FF;
+    padding: 5%;
+}
+
+#rcolumn {
+    background-color: #DAD2D8;
+    color: #06283d;
+    padding: 5%;
+}
+
+#personal-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.personal-tags {
+    margin: 5px 0;
+    display: none;
+}
+
+#intro {
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+.button-container {
+    margin-top: 20px;
+    border-radius: 100px;
+}
+
+button {
+    background-color: #274c63;
+    margin: 5px;
+    padding: 8px;
+    padding-left: 9px;
+    padding-right: 9px;
+    color: #F7F7FF;
+    box-shadow: 1px 1px #06283d;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.8;
+    box-shadow: 4px 4px #041e30;
+}
+
+.socials-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    transition: fill 0.3s ease, transform 0.3s ease; /* Add transform transition for size change */
+}
+
+.social-icons:hover {
+    transform: scale(1.2); /* Make icons slightly larger on hover */
+}
+
+#linkedin-icon {
+    color: #4E878C;
+    border-radius: 4px;
+    width: 48px;
+    height: 48px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+#linkedin-icon:hover {
+    color: #0077B5;
+    background-color: white;
+    width: 52px;
+    height: 52px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+#github-icon {
+    color: #4E878C;
+    border-radius: 1000px;
+    width: 48px;
+    height: 48px;
+    margin-left: 12px;
+    margin-top: 2px;
+}
+
+#github-icon:hover {
+    color: #333;
+    background-color: white;
+    width: 52px;
+    height: 52px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.fade-in {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Additional styles for button spacing */
+button + button {
+    margin-top: 10px; /* Add space between buttons */
+}
