@@ -1,44 +1,17 @@
 html, body {
-    margin: 0;
-    padding: 0;
     height: 100%;
-    overflow: hidden;
     font-family: "Montserrat", sans-serif;
-}
-
-#container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-#content {
-    display: flex;
-    flex: 1;
-}
-
-.column {
-  float: left;
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.column:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 #lcolumn {
     background-color: #06283d;
     color: #F7F7FF;
-    padding: 5%;
 }
 
 #rcolumn {
     background-color: #DAD2D8;
     color: #06283d;
-    padding: 5%;
+    overflow-y: auto;
 }
 
 #personal-title {
@@ -58,40 +31,37 @@ html, body {
 
 .button-container {
     margin-top: 20px;
-    border-radius: 100px;
 }
 
-button {
+.btn-custom {
     background-color: #274c63;
-    margin: 5px;
-    padding: 8px;
-    padding-left: 9px;
-    padding-right: 9px;
     color: #F7F7FF;
     box-shadow: 1px 1px #06283d;
     border: none;
+    margin: 5px;
+    padding: 8px 12px;
 }
 
-button:hover {
+.btn-custom:hover {
     opacity: 0.8;
     box-shadow: 4px 4px #041e30;
+    color: #F7F7FF;
 }
 
 .socials-container {
     display: flex;
     align-items: center;
-    margin-top: 20px;
 }
 
 .social-icons {
     width: 36px;
     height: 36px;
     margin-right: 10px;
-    transition: fill 0.3s ease, transform 0.3s ease; /* Add transform transition for size change */
+    transition: fill 0.3s ease, transform 0.3s ease;
 }
 
 .social-icons:hover {
-    transform: scale(1.2); /* Make icons slightly larger on hover */
+    transform: scale(1.2);
 }
 
 #linkedin-icon {
@@ -134,13 +104,9 @@ button:hover {
     display: none;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Additional styles for button spacing */
-button + button {
-    margin-top: 10px; /* Add space between buttons */
+@media (max-width: 991.98px) {
+    #lcolumn, #rcolumn {
+        height: auto;
+        overflow-y: auto;
+    }
 }
