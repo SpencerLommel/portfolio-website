@@ -112,11 +112,27 @@ html, body {
 }
 
 @media (max-width: 991.98px) {
-    #lcolumn, #rcolumn {
-        min-height: auto;
+    html, body {
+        height: auto;
+        overflow-x: hidden;
     }
-    
+
     .container-fluid {
         height: auto;
+        min-height: auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    #lcolumn, #rcolumn {
+        min-height: auto;
+        height: auto;
+        width: 100%;
+    }
+
+    #rcolumn {
+        padding-bottom: 2rem;
     }
 }
